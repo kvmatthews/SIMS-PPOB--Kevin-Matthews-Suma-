@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./DataProfile.css";
 import BackgroundSaldo from "../../assets/Website Assets/Background Saldo.png";
 import FotoProfil from "../../assets/Website Assets/Profile Photo.png";

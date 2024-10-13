@@ -8,7 +8,7 @@ import { CiAt } from "react-icons/ci";
 import { FaRegUser, FaPen } from "react-icons/fa";
 
 const AccountPage = () => {
-    const { email, first_name, last_name, profile_image, loading, message, error } = useSelector((state) => state.profile); // Ambil state dari Redux
+    const { email, first_name, last_name, profile_image, message, error } = useSelector((state) => state.profile); // Ambil state dari Redux
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const jwtToken = localStorage.getItem("jwtToken");
