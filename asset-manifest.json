@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SIMS-PPOB--Kevin-Matthews-Suma-/static/css/main.c913b19c.css",
+    "main.js": "/SIMS-PPOB--Kevin-Matthews-Suma-/static/js/main.fb2e91ae.js",
+    "static/js/453.ceb616ac.chunk.js": "/SIMS-PPOB--Kevin-Matthews-Suma-/static/js/453.ceb616ac.chunk.js",
+    "static/media/Illustrasi Login.png": "/SIMS-PPOB--Kevin-Matthews-Suma-/static/media/Illustrasi Login.90372604dd5abec0856f.png",
+    "index.html": "/SIMS-PPOB--Kevin-Matthews-Suma-/index.html",
+    "main.c913b19c.css.map": "/SIMS-PPOB--Kevin-Matthews-Suma-/static/css/main.c913b19c.css.map",
+    "main.fb2e91ae.js.map": "/SIMS-PPOB--Kevin-Matthews-Suma-/static/js/main.fb2e91ae.js.map",
+    "453.ceb616ac.chunk.js.map": "/SIMS-PPOB--Kevin-Matthews-Suma-/static/js/453.ceb616ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c913b19c.css",
+    "static/js/main.fb2e91ae.js"
+  ]
+}
