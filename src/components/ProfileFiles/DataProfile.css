@@ -1,0 +1,56 @@
+/* Data Pribadi */
+
+.comp_data_pribadi{
+    display: flex;
+    gap: 220px;
+    margin: 40px auto;
+    max-width: max-content;
+}
+
+.beranda_user {
+    color: #393535;
+}
+
+.beranda_user img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.beranda_user h2 {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.beranda_saldo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: rgb(230, 230, 230);
+}
+
+.beranda_saldo h3 {
+    position: absolute;
+    left: 20px;
+    top: 28px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.beranda_saldo h4 {
+    position: absolute;
+    left: 20px;
+    top: 56px;
+    font-size: xx-large;
+}
+
+.beranda_saldo h5 {
+    position: absolute;
+    left: 20px;
+    bottom: 27px;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100px;
+    cursor: pointer;
+}

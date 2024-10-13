@@ -1,0 +1,96 @@
+.halaman_topup {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.halaman_topup h4 {
+    color: #393535;
+}
+
+.halaman_topup h2 {
+    color: #393535;
+    margin-top: 4px;
+    margin-bottom: 40px;
+}
+
+.topup_input {
+    display: flex;
+}
+
+.topup_information {
+    display: flex;
+    flex-direction: column;
+}
+
+.topup_information input {
+    height: 40px;
+    width: 600px;
+    margin-bottom: 16px;
+    padding-left: 36px;
+    border-radius: 4px;
+    border: 1.8px solid rgb(182, 182, 182);
+    font-weight: bold;
+    font-size: 12px;
+    color: #525252;
+}
+
+.topup_input_container{
+    display: flex;
+    position: relative;
+}
+
+.cash_icon {
+    position: absolute;
+    top: 11.4px;
+    left: 12px;
+    color: gray;
+}
+
+.topup_information button {
+    height: 40px;
+    background-color: rgb(179, 179, 179);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.konfirmasi_topup:not(:disabled) {
+    background-color: rgb(255, 30, 30);
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.konfirmasi_topup:not(:disabled):active {
+    background-color: #ff4747;
+}
+
+.list_topup {
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 300px;
+    max-height: 100px;
+}
+
+.list_topup button {
+    color: rgb(64, 64, 64);
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.list_topup button:active {
+    background-color: rgb(182, 182, 182);
+}
+
+.verification_message{
+    margin-top: 20px;
+    text-align: center;
+    color: #393535;
+}

@@ -1,0 +1,113 @@
+.halaman_akun {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.profil_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profil_image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.image_container {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.image_container input {
+    display: none;
+}
+
+.edit_icon {
+    position: absolute;
+    padding: 4px;
+    bottom: -3px;
+    right: -6px;
+    border: solid 1.6px rgb(182, 182, 182);
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    background-color: white;
+    color: #393535;
+}
+
+.profil_image h1 {
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #393535;
+}
+
+.account_information {
+    color: #393535;
+    width: 100%;
+}
+
+.account_information h2 {
+    font-size: 12px;
+    color: #393535;
+    margin-bottom: 10px;
+}
+
+.account_information input {
+    width: 100%;
+    padding: 12px 0 12px 30px;
+    border: 1.8px solid rgb(182, 182, 182);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #393535;
+}
+
+.account_details {
+    margin-bottom: 24px;
+}
+
+.input_container {
+    display: flex;
+    position: relative;
+}
+
+.input_container span {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #393535;
+}
+
+.account_button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.account_button button {
+    padding: 11px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: rgb(255, 30, 30);
+    border: none;
+    font-size: 12px;
+    /* font-weight: bold; */
+    color: white;
+    transition: background-color 0.1s ease;
+}
+
+.account_button button:active {
+    border: rgb(255, 30, 30) 1.8px solid;
+    background-color: white;
+    color: rgb(255, 30, 30);
+}

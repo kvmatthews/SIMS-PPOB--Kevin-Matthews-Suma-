@@ -1,0 +1,67 @@
+.halaman_service {
+    margin: auto;
+    max-width: 1060px;
+}
+
+.halaman_service {
+    color: #393535;
+}
+
+.pembayaran_service{
+    display: flex;
+    flex-direction: column;
+}
+
+.nama_service {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #393535;
+}
+
+.nama_service img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.input_service_container {
+    position: relative;
+    display: flex;
+}
+
+.input_service_container input {
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1.8px solid rgb(182, 182, 182);
+    padding-left: 36px;
+    border-radius: 4px;
+}
+
+.cash_icon_service{
+    position: absolute;
+    top: 31.4px;
+    left: 12px;
+    color: gray;
+}
+
+.pembayaran_service button {
+    height: 40px;
+    background-color: rgb(255, 30, 30);
+    border-color: none;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.1s ease;
+}
+
+.pembayaran_service button:active {
+    background-color: #ff4747;
+}
+
+.halaman_service p {
+    margin-top: 10px;
+}
+
