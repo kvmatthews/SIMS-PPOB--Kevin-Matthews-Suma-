@@ -1,27 +1,32 @@
+import React, { Suspense, lazy } from 'react';
 import './App.css';
 import { BrowserRouter as Routes, Route } from 'react-router-dom';
-import Login from "./pages/LoginFiles/Login_Page";
-import Register from './pages/RegisterFiles/Register_Page';
-import HomePage from './pages/HomePageFiles/Home_Page';
-import Navigasi from "./components/NavigationFiles/NavigationComp";
-import TopUpPage from './pages/TopUpFiles/TopUp_Page';
-import DataProfile from './components/ProfileFiles/DataProfileComp';
-import ServicePage from './pages/ServicePageFiles/Service_Page';
-import TransactionPage from './pages/TransactionPageFiles/Transaction_Page';
-import AccountPage from './pages/AccountFiles/AccountPage';
+
+const Login = lazy(() => import("./pages/LoginFiles/Login_Page"));
+const Register = lazy(() => import('./pages/RegisterFiles/Register_Page'));
+const HomePage = lazy(() => import('./pages/HomePageFiles/Home_Page'));
+const Navigasi = lazy(() => import("./components/NavigationFiles/NavigationComp"));
+const TopUpPage = lazy(() => import('./pages/TopUpFiles/TopUp_Page'));
+const DataProfile = lazy(() => import('./components/ProfileFiles/DataProfileComp'));
+const ServicePage = lazy(() => import('./pages/ServicePageFiles/Service_Page'));
+const TransactionPage = lazy(() => import('./pages/TransactionPageFiles/Transaction_Page'));
+const AccountPage = lazy(() => import('./pages/AccountFiles/AccountPage'));
+
 
 function App() {
   return (
-      <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/home' element={<><Navigasi/><DataProfile/><HomePage /></>} />
-        <Route path='/topup' element={<><Navigasi/><DataProfile/><TopUpPage /></>} />
-        <Route path='/service/:id' element={<><Navigasi/><DataProfile/><ServicePage/></>}/>
-        <Route path='/transaction'element={<><Navigasi/><DataProfile/><TransactionPage/></>}/>
-        <Route path='/akun' element={<><Navigasi/><AccountPage/></>}/>
-        <Route path='*' element={<h1>404 Not Found</h1>} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/home' element={<><Navigasi/><DataProfile/><HomePage /></>} />
+          <Route path='/topup' element={<><Navigasi/><DataProfile/><TopUpPage /></>} />
+          <Route path='/service/:id' element={<><Navigasi/><DataProfile/><ServicePage/></>} />
+          <Route path='/transaction' element={<><Navigasi/><DataProfile/><TransactionPage/></>} />
+          <Route path='/akun' element={<><Navigasi/><AccountPage/></>} />
+          <Route path='*' element={<h1>404 Not Found</h1>} />
+        </Routes>
+      </Suspense>
   );
 }
 
