@@ -93,7 +93,10 @@ const AccountPage = () => {
         <div className="halaman_akun">
             <div className="profil_image">
                 <div className="image_container" onClick={() => document.getElementById('imageUpload').click()}>
-                    <img src={profile_image || DefaultProfileImage} alt="Profile" />
+                    <img
+                        src={profile_image === "https://minio.nutech-integrasi.com/take-home-test/null" ? DefaultProfileImage : profile_image}
+                        alt="Profile"
+                    />
                     <span className="edit_icon">
                         <FaPen style={{ fontSize: "10px" }} />
                     </span>
