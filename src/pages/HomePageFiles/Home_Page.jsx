@@ -16,7 +16,7 @@ const HomePage = () => {
     useEffect(() => {
         const token = localStorage.getItem('jwtToken');
         if (!token) {
-            navigate('/login');
+            navigate('/');
             return;
         }
 

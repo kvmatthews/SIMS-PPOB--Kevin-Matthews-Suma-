@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .home_page {
     display: flex;
     flex-direction: column;

@@ -13,7 +13,7 @@ const TransactionPage = () => {
 
     useEffect(() => {
         if (!jwtToken) {
-            navigate("/login");
+            navigate("/");
         } else {
             dispatch(resetTransactions()); // Reset transaksi saat pertama kali load halaman
             dispatch(fetchTransactions({ offset: 0, limit, token: jwtToken })); // Fetch transaksi

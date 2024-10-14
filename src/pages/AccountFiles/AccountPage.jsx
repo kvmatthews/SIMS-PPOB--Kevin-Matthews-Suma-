@@ -22,7 +22,7 @@ const AccountPage = () => {
     // Fetch data profil saat komponen di-mount
     useEffect(() => {
         if (!jwtToken) {
-            navigate("/login");
+            navigate("/");
         } else {
             dispatch(fetchProfile(jwtToken)); // Fetch data profil dari Redux
         }

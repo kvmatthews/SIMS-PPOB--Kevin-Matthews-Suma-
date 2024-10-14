@@ -14,7 +14,7 @@ const ServicePage = () => {
 
     useEffect(() => {
         if (!jwtToken) {
-            navigate('/login');
+            navigate('/');
         } else {
             dispatch(fetchServices(jwtToken)); // Ambil data layanan dari Redux
         }

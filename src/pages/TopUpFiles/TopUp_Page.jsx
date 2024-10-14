@@ -16,7 +16,7 @@ const TopUpPage = () => {
 
     useEffect(() => {
         if (!jwtToken) {
-            navigate('/login');
+            navigate('/');
         }
     }, [jwtToken, navigate]);
 

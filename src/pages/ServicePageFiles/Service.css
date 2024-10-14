@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .halaman_service {
     margin: auto;
     max-width: 1060px;
